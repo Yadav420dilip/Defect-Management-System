@@ -19,5 +19,5 @@ from accounts import urls
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    path('accounts/', include(urls)),
+    path('accounts/', include(urls), name='accounts'),
 ]
