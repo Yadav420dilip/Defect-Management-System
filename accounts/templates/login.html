@@ -16,27 +16,6 @@
   <link rel="stylesheet" href="{% static 'plugins/toastr/toastr.min.css' %}">
 </head>
 <body class="hold-transition login-page">
-{% if messages %}
-{% for message in messages %}
-<div
-  class="alert fade"
-  id="alert-info"
-  role="alert"
-  data-mdb-color="info"
-  data-mdb-position="top-right"
-  data-mdb-stacking="true"
-  data-mdb-width="535px"
-  data-mdb-width="535px"
-  data-mdb-append-to-body="true"
-  data-mdb-hidden="true"
-  data-mdb-autohide="true"
-  data-mdb-delay="2000"
->
-  {{ message }}
-  <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-</div>
-{% endfor %}
-{% endif %}
 
 <div class="login-box">
   <div class="login-logo">
