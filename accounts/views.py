@@ -17,7 +17,7 @@ class Account_Login(View):
             user = authenticate(request, username=forms.cleaned_data.get('username'), password=forms.cleaned_data.get('password'))
             if user is not None:
                 login(request, user)
-                return HttpResponse('Login Done.')
+                return render(request, 'dashboard.html')
             else:
                 messages.add_message(request=request, level=messages.INFO,
                                      message=' Login Failed! Enter the username and password correctly')
